@@ -14,8 +14,9 @@ const Home = () => {
     <div>
       <Header />
       <div className="p-5">
-        <h2 className="text-xl font-bold">Olá, Matheus</h2>
-        <p>Segunda-feira, 05 de agosto.</p>
+        <h2 className="text-xl font-bold">Olá, Cliente</h2>
+        <p>Quarta-feira, 07 de agosto.</p>
+
         {/*BUSCA */}
         <div className="mt-6 flex items-center gap-2">
           <Input placeholder="Faça sua busca..." />
