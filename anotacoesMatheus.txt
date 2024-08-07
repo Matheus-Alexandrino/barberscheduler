@@ -49,3 +49,9 @@
 
 10- Install Shadcn:
     npx shadcn-ui@latest init
+
+11- passar componentes e lib para pasta app e incluir '_' underline antes de ambos
+
+12- instalar husky:
+    npm install -D husky lint-staged
+    npx husky init
