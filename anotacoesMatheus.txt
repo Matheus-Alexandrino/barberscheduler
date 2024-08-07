@@ -41,9 +41,11 @@
     npm install -D prettier prettier-plugin-tailwindcss
     Then add the plugin to your Prettier configuration:
 
-// .prettierrc
+9- criar >  .prettierrc em public e colar:
 {
   "plugins": ["prettier-plugin-tailwindcss"]
 }
 
-9-
+
+10- Install Shadcn:
+    npx shadcn-ui@latest init
