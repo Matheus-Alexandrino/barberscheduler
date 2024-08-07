@@ -27,3 +27,23 @@
             npx prisma format
         Para rodar migrations:
             npx prisma init --datasource-provider postgresql 
+5- Adicionar trecho em package.json:
+     "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+
+6- npm install -D ts-node // -D : modo desenvolvimento
+
+7- npx prisma db seed
+
+8- Instalar prettier plugin tailwind:
+    //https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+    npm install -D prettier prettier-plugin-tailwindcss
+    Then add the plugin to your Prettier configuration:
+
+// .prettierrc
+{
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+
+9-
