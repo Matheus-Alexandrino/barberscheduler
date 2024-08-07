@@ -21,7 +21,7 @@
         }
 
         setar conexão de banco de dados em .env:
-            DATABASE_URL='postgresql://basebarber_owner:HEZgeY0M2cAT@ep-plain-silence-a49k1efs.us-east-1.aws.neon.tech/basebarber?sslmode=require'
+            DATABASE_URL=''
             Está sendo utilizado NeonDB
         Formatar schema.prisma:
             npx prisma format
