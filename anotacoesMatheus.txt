@@ -1,0 +1,29 @@
+1 - Primeiro passo conferir node -v
+2 - Instalar Prisma(ORM) com Postgres = npm install prisma --save-dev
+3 - npx prisma init --datasource-provider postgresql
+4 - Criar um container pra rodar o banco com o essa docker-compose.yml{
+        version: "3"
+
+        services:
+        postgres:
+            image: postgres:latest
+            container_name: fsw-barber-postgres
+            environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: password
+            ports:
+            - "5432:5432"
+            volumes:
+            - ./.postgres-data:/var/lib/postgresql/data
+
+        volumes:
+        .postgres-data:
+        }
+
+        setar conexão de banco de dados em .env:
+            DATABASE_URL='postgresql://basebarber_owner:HEZgeY0M2cAT@ep-plain-silence-a49k1efs.us-east-1.aws.neon.tech/basebarber?sslmode=require'
+            Está sendo utilizado NeonDB
+        Formatar schema.prisma:
+            npx prisma format
+        Para rodar migrations:
+            npx prisma init --datasource-provider postgresql 
